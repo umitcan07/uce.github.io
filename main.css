@@ -1,0 +1,500 @@
+/* Colors */
+
+/*
+$bg-color : #F1F6FA ;
+$eba-red : #DC0C15 ;
+$eba-green : #0CDC85 ;
+$light-gray : #7483A9 ;
+$dark-gray : #20315B ;
+*/
+
+/* Actual Codes Start Here */
+
+body {
+
+    background-color: #F1F6FA;
+    font-family: 'Inter';
+    display: flex;
+
+}
+
+
+.white-bg {
+
+    background-color: white;
+
+}
+
+/* Sidebar Navigation */
+
+.left-nav {
+
+    width: 96px;
+    height: 100vh;
+
+}
+
+.navlist {
+
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0 0px 0;
+    height: 100%;
+
+}
+
+.navlist > li {
+
+    margin: auto;
+
+}
+
+.meb-logo img {
+
+    height: 48px;
+
+}
+
+.navlist .nav-icons {
+
+    flex-grow: 1;
+
+}
+
+.nav-mid-icons {
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav-mid-icons a {
+
+    padding: 16px 0px;
+    width: 96px;
+    margin: 8px auto;
+    opacity: 0.5;
+    transition: 200ms cubic-bezier(0.3, 0, 0.3, 1);
+    border-left: 2px solid transparent;
+
+}
+
+.nav-mid-icons a:hover {
+
+    opacity: 1;
+    background-color: #F1F6FA;
+    border-left: 2px solid #DC0C15;
+
+}
+
+.nav-mid-icons a:nth-child(1) {
+
+    opacity: 1;
+    border-left: 2px solid #DC0C15;
+
+}
+
+.logout-icon {
+
+    background-color: #94a3c9;
+    padding: 16px 0px;
+    text-align: center;
+    width: 96px;
+    margin: 0 auto;
+    opacity: 0.8;
+    transition: 200ms cubic-bezier(0.3, 0, 0.3, 1);
+
+
+}
+
+.logout-icon:hover {
+
+    opacity: 1;
+    background-color: rgba(205, 12, 21, .85);
+
+
+}
+
+svg {
+
+    fill: red;
+
+}
+
+.ico {
+
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+
+
+/* Main Part */
+
+.container {
+
+    width: 100%;
+    padding: 24px 80px;
+
+}
+
+
+/* Header */
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+header h1 {
+
+    font-weight: 500;
+    display: inline-block;
+
+}
+
+header > span > h1:nth-child(2) {
+
+    font-weight: 600;
+
+}
+
+header ul {
+
+    display: flex;
+    align-items: center;
+
+}
+
+header ul li {
+
+    display: inline-block;
+
+}
+
+header h1 {
+
+    font-size: 32px;
+
+}
+
+
+header > ul > li:nth-child(1) {
+
+    margin-right: 40px;
+
+}
+
+header li:nth-child(1) {
+
+    margin: 8px;
+    transition: 200ms cubic-bezier(0.3, 0, 0.3, 1);
+
+}
+
+header li:nth-child(1):hover {
+
+    opacity: .5;
+
+}
+
+/* Panel */
+
+.panel {
+
+    display: flex;
+    align-items: left;
+    padding: 0 24px;
+
+}
+
+.panel span {
+
+    background-color: white;
+    border-radius: 12px;
+    padding: 12px;
+    margin: 24px 12px 40px 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 200ms cubic-bezier(0.3, 0, 0.3, 1);
+
+
+}
+
+.panel span:hover {
+
+    box-shadow: 0px 6px 8px 4px rgba(116, 131, 169, .15);
+
+}
+
+.panel-text {
+
+    color: 20315B;
+    font-weight: 600;
+    margin-left: 8px;
+    margin-right: 8px;
+
+}
+
+/* Sections (Main) */
+
+.sections {
+
+    display: flex;
+    justify-content: space-between;
+    margin: 24px 24px 0 24px;
+}
+
+.sec-one,
+.sec-two {
+
+    min-width: 480px;
+    height: calc(100vh - 260px);
+    overflow: auto;
+
+
+}
+
+.sec-one {
+
+    max-width: 680px;
+    flex-grow: 1;
+}
+
+.sec-two {
+
+    flex-grow: 1;
+    max-width: 600px;
+
+}
+
+/* Section One */
+
+
+.lesson {
+
+    background-color: white;
+    padding: 16px 16px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 200ms cubic-bezier(0.3, 0, 0.3, 1);
+    margin-right: 16px;
+    margin-top: 8px;
+    margin-left: 16px;
+
+}
+
+.lesson:hover {
+
+    box-shadow: 0px 6px 8px 4px rgba(116, 131, 169, .15);
+    z-index: 999;
+
+}
+
+.texts {
+
+    flex-grow: 1;
+
+}
+
+.lesson h3 {
+
+    margin-bottom: 4px;
+    color: #20315B;
+
+}
+
+.lesson h4 {
+
+    color: #7483A9;
+    font-weight: 400;
+
+}
+
+.time-active {
+
+    font-weight: 500;
+    border: none;
+    background-color: #DC0C15;
+    color: white;
+    font-size: 20px;
+    border-radius: 16px;
+    max-height: 48px;
+    padding: 12px 16px;
+    margin-right: 32px;
+    margin-left: 32px;
+    width: 96px;
+    text-align: center;
+}
+
+.time-passive {
+
+    font-weight: 500;
+    border: 1px solid #20315B30;
+    background-color: white;
+    color: #7483A9;
+    font-size: 20px;
+    border-radius: 16px;
+    max-height: 48px;
+    padding: 12px 16px;
+    margin-right: 32px;
+    margin-left: 32px;
+    width: 96px;
+    text-align: center;
+}
+
+
+/* Custom Scrollbar */
+
+.sec-one::-webkit-scrollbar,
+.sec-two::-webkit-scrollbar {
+
+    width: 12px;
+
+}
+
+.sec-one::-webkit-scrollbar-track,
+.sec-two::-webkit-scrollbar-track {
+
+    background: #B1BDDA29;
+    border-radius: 6px;
+
+
+}
+
+.sec-one::-webkit-scrollbar-thumb,
+.sec-two::-webkit-scrollbar-thumb {
+
+    background: #7483A980;
+    border-radius: 6px;
+    transition: 200ms cubic-bezier(0.3, 0, 0.3, 1);
+
+}
+
+.sec-one::-webkit-scrollbar-thumb:hover,
+.sec-two::-webkit-scrollbar-thumb:hover {
+
+    background: #7483A9;
+
+}
+
+/* Section 2 */
+
+.box {
+
+    background-color: white;
+    padding: 16px 16px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 8px;
+    cursor: pointer;
+    transition: 200ms cubic-bezier(0.3, 0, 0.3, 1);
+
+
+
+}
+
+.box:hover {
+
+    box-shadow: 0px 6px 8px 4px rgba(116, 131, 169, .15);
+
+
+}
+
+.eba {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.eba > span:nth-child(2) {
+
+    text-align: left;
+    color: #7483A9;
+    margin-right: 32px;
+    margin-left: 16px;
+    display: inline-block;
+
+}
+
+.eba h5 {
+
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.box h3 {
+
+    margin-bottom: 4px;
+    color: #20315B;
+
+}
+
+.box h4 {
+
+    color: #7483A9;
+    font-weight: 400;
+    flex-grow: 1;
+
+}
+
+.eba-logo img {
+
+    height: 44px;
+
+}
+
+.box-open {
+
+    height: 272px;
+    padding: 0;
+    overflow: hidden;
+    background: url(img/penguen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.box-open div {
+
+    background-color: #FFFFFFFF
+}
+
+.box-open h3,
+.box-open h4 {
+    padding-left: 16px;
+
+
+}
+
+.box-open h3 {
+
+    padding-top: 16px;
+
+}
+
+.box-open h4 {
+
+    padding-bottom: 16px
+}
